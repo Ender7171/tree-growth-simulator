@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree Plantation Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="daytime">
+  <!-- Start Page -->
+  <div id="startPage">
+  <div class="start-box">
+    <h1>🌳 Tree Plantation Game 🌳</h1>
+    <p class="tagline">Plant, water, and grow your own tree!</p>
+    <ul class="rules">
+      <li>🪓 Use the shovel to dig a hole</li>
+      <li>🌱 Plant a sapling</li>
+      <li>💧 Water once each day/night cycle</li>
+      <li>🌞 Watch your tree grow step by step!</li>
+    </ul>
+    <button id="startBtn" onclick="startGame()">▶ Start Game</button>
+  </div>
+</div>
+
+  <!-- Game Container -->
+  <div id="gameContainer" style="display:none;">
+    <!-- Toolbar -->
+    <div id="toolbar">
+      <button id="resetBtn" onclick="resetGame()">🔄 Reset</button>
+      <button onclick="useShovel()">🪓 Shovel</button>
+      <button onclick="plantSapling()">🌱 Plant Sapling</button>
+      <button onclick="waterPlant()">💧 Water</button>
+    </div>
+
+    <!-- Garden -->
+    <div id="garden">
+      <img id="mudHole" src="mud-hole.png" style="display:none;">
+      <img id="sapling" src="sapling.png" style="display:none;">
+      <img id="smallPlant" src="small-plant.png" style="display:none;">
+      <img id="bigPlant" src="big-plant.png" style="display:none;">
+      <img id="smallTree" src="small-tree.png" style="display:none;">
+      <img id="bigTree" src="big-tree.png" style="display:none;">
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
