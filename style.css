@@ -178,3 +178,59 @@ body.nighttime {
   80% { transform: translateY(40px) scale(1); opacity: 1; }
   100% { transform: translateY(60px) scale(0.5); opacity: 0; }
 }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  /* Toolbar buttons */
+  #toolbar button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+  /* Reset button */
+  #resetBtn {
+    font-size: 16px;
+    padding: 12px 22px;
+  }
+
+  /* Garden images */
+  #garden img {
+    width: 30vw;          /* bigger for mobile */
+    max-width: 160px;
+    min-width: 80px;
+  }
+
+  /* Start button */
+  #startPage button {
+    font-size: 1.1em;
+    padding: 12px 28px;
+  }
+
+  /* Rules list text */
+  .rules {
+    font-size: 1em;
+  }
+
+  /* Messages */
+  #message {
+    font-size: 18px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  #toolbar button {
+    padding: 14px 24px;
+    font-size: 18px;
+  }
+
+  #garden img {
+    width: 40vw;
+    max-width: 140px;
+  }
+
+  #message {
+    font-size: 16px;
+  }
+}
